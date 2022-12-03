@@ -1,0 +1,116 @@
+li {
+    text-transform: capitalize;
+}
+
+#end {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    animation-name: Endwell;
+    animation-duration: 5s;
+}
+
+@keyframes Endwell {
+    from {
+        background-color: crimson;
+    }
+    to {
+        background-color: greenyellow;
+    }
+
+}
+
+#change {
+    width: 100px;
+    height: 100px;
+    animation-name: change;
+    background-color: coral;
+    animation-duration: 5s;
+}
+
+@keyframes change {
+    0% {background-color: coral;}
+    20% {background-color: blue;}
+    40%{background-color: black;}
+    60%{background-color: red;}
+    100%{background-color: crimson;}
+}
+
+#position {
+    width: 100px;
+    height: 100px;
+    animation-name: position;
+    background-color: blue;
+    animation-duration: 5s;
+    position: relative;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes position {
+    0% {background-color:blue; left: 0px; top: 0px;}
+    25% {background-color:brown; left: 200px; top: 0px;}
+    50% {background-color:green; left: 200px; top: 200px;}
+    75% {background-color:coral; left: 0px; top: 200px;}
+    100% {background-color: blue; left: 0px; top: 0px;}
+}
+
+#revers {
+    width: 100px;
+    height: 100px;
+    animation-name: revers;
+    background-color: yellow;
+    animation-duration: 5s;
+    position: relative;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+}
+
+@keyframes revers {
+    0% {background-color:blue; left: 0px; top: 0px;}
+    25% {background-color:brown; left: 200px; top: 0px;}
+    50% {background-color:green; left: 200px; top: 200px;}
+    75% {background-color:coral; left: 0px; top: 200px;}
+    100% {background-color: blue; left: 0px; top: 0px;}
+}
+
+#alternative {
+    width: 100px;
+    height: 100px;
+    animation-name: alternative;
+    background-color: indigo;
+    animation-duration: 5s;
+    position: relative;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes alternative {
+        0% {background-color:indigo; left: 0px; top: 0px;}
+        25% {background-color: orange; left: 200px; top: 0px;}
+        50% {background-color: violet; left: 200px; top: 200px;}
+        75% {background-color: red; left: 0px; top: 200px;}
+        100% {background-color: indigo; left: 0px; top: 0px;}
+}
+
+#end1, #end2, #end3, #end4, #end5 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite; 
+}
+   
+  #end1 {animation-timing-function: linear; background-color:green;}
+  #end2 {animation-timing-function: ease; background-color: indigo;}
+  #end3 {animation-timing-function: ease-in; background-color: blue;}
+  #end4 {animation-timing-function: ease-out; background-color:orange;}
+  #end5 {animation-timing-function: ease-in-out; background-color: tomato;}
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
